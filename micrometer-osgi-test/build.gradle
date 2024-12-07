@@ -26,7 +26,7 @@ dependencies {
 def testingBundle = tasks.register('testingBundle', Bundle) {
     archiveClassifier = 'tests'
     from sourceSets.test.output
-    sourceSet = sourceSets.test
+    sourceSets.test
 
     bundle {
         bnd """\
